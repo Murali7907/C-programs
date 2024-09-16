@@ -7,15 +7,15 @@ int main()
     scanf("%d %d %d",&num1,&num2,&num3);
     if(num1>num2&&num1>num3)
     {
-        printf("a is greater");
+        printf("num1 is greater");
     }
     else if(num2>num1&&num2>num3)
     {
-        printf("b is greater");
+        printf("num2 is greater");
     }
     else 
     {
-        printf("c is greater");
+        printf("num3 is greater");
     }
 
     return 0;
