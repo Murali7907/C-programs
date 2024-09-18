@@ -7,12 +7,12 @@ int main()
     scanf("%d",&num);
   
   
-  
-    for(int i=1;i<=num;i++)
+  printf("%d %d ",num1,num2);
+    for(int i=3;i<=num;i++)
     {      
-        temp=num1+num2;
-          num2=num1;
-          num1=temp;
+        temp=num1;
+        num1=num2;
+        num2=num1+temp;
           
           
           printf("%d ",num2);
