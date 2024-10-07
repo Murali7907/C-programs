@@ -1,34 +1,21 @@
 #include <stdio.h>
+
 int main() {
-
-    int i, j, rows, num =1,numb;
-
+    int i, j, rows;
     
-    printf("Enter the number of rows:");
-
+    printf("Enter the number of rows: ");
     scanf("%d", &rows);
 
-   
+    int totalNumbers = (rows * (rows + 1)) / 2; 
 
-    for (i = 1; i <=rows; ++i) {
-
-     
-
-        for (j = i; j <rows; j++) {
-            
-            numb=((rows*2)-num)+1;
-            
-            printf("%d ",numb);
-            ++num;
-           
-          
-
+    
+    for (i = rows; i >= 1; --i) {
+        for (j = 1; j <= i; ++j) {
+            printf("%d ", totalNumbers--);
         }
-
-        printf("\n"); 
-
+        printf("\n");
     }
 
     return 0;
-
 }
+
